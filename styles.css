@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("./Polices/Raleway-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: "Raleway", sans-serif ;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+/*  HEADER  */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_box{
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin: 0 10px 0 15px;
+}
+
+/* TOP SECTION  */
+
+#town_form{
+    display: flex;
+}
+
+#filter_box{
+    display: flex;
+    align-items: center;
+}
+
+#filter_list ul{
+    display: flex;
+    list-style: none;
+}
+
+#filter_box li{
+    display: flex;
+    padding: 5px;
+}
+
+#filter_list i{
+    color:blue;
+}
