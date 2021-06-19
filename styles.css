@@ -41,7 +41,7 @@ header{
 nav ul{
     display: flex;
     list-style: none;
-    margin: 0 15px 0 0;
+    margin: 0 15px 11px 0;
     padding: 0;
 }
 
@@ -112,7 +112,67 @@ nav li a:hover{
 }
 /* OFFER SECTION */
 
+#offer_section{
+    display: flex;
+    justify-content: space-between;
+}
 
+#offer_list{
+    width : 800px;
+    background-color: lightgrey;
+    padding: 10px 30px 30px 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#offers_box{
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap;
+}
+
+.offer_panels{
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.offer_description{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+#offer_hotspots{
+    background-color: lightgrey;
+    width: 350px;
+    padding: 10px 30px;
+}
+
+#offer_pannel_1{
+    background: url(./Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+#offer_pannel_2{
+    background: url(./Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+#offer_pannel_3{
+    background: url(./Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+#offer_pannel_4{
+    background: url(./Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+#offer_pannel_5{
+    background: url(./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+#offer_pannel_6{
+    background: url(./Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
 
 /* ACTIVITY SECTION */
 
