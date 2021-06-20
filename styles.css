@@ -12,6 +12,7 @@ body{
 {
     width: 1200px;
     margin: auto;
+    font-size: 0,9em;
 }
 
 /*  HEADER  */
@@ -104,8 +105,8 @@ nav li a:hover{
     width: 20px;
     height: 20px;
     margin: 0;
-    color:blue;
-    background-color: lightblue;
+    color:#0065FC;
+    background-color: #DEEBFF;
     padding: 10px;
     border-radius: inherit;
 
@@ -118,11 +119,19 @@ nav li a:hover{
 }
 
 #offer_list{
+    display: flex;
+    flex-direction: column;
     width : 800px;
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     padding: 10px 30px 30px 30px;
     margin-right: 10px;
     border-radius: 10px;
+}
+
+#offer_list a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
 }
 
 #offers_box{
@@ -132,48 +141,98 @@ nav li a:hover{
 }
 
 .offer_panels{
-    width: 30%;
-    height: 200px;
-    background-color: white;
+    /* width: 29%; */
+    width: 220px;
+    height: 180px;
     margin: 10px;
     border-radius: 10px;
     position: relative;
+    box-shadow: 3px 3px 3px lightgrey;
+    border: white solid 3px;
+
 }
 
 .offer_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
-    height: 70px;
+    height: 60px;
     width: 100%;
     position: absolute;
     bottom: 0;
-    border-radius: 0 0 10px 10px;
+    /* border-radius: 0 0 10px 10px; */
+    overflow: hidden;
 }
+
+.offer_description h3, .hotspot_description h3, .price{
+    margin: 0 0 0 5px;
+    font-size: 0.9em;
+}
+
+.stars{
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
 #offer_hotspots{
-    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F2F2F2;
     width: 350px;
     padding: 10px 30px;
+    border-radius: 10px;
 }
 
 #offer_pannel_1{
     background: url(./Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: contain;
 }
 
 #offer_pannel_2{
     background: url(./Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: contain;
 }
 #offer_pannel_3{
     background: url(./Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: contain;
 }
 #offer_pannel_4{
     background: url(./Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: contain;
 }
 #offer_pannel_5{
-    background: url(./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background: url(./Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
+    background-size: contain;
 }
 #offer_pannel_6{
-    background: url(./Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background: url(./Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat top;
+    background-size: 220px;
+    background-position-y: -110px;
 }
 
+.hotspot_pannels{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border: white solid 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+
+.hotspot_pannels img{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.hotspot_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 /* ACTIVITY SECTION */
 
 #activity_section{
@@ -193,8 +252,8 @@ nav li a:hover{
 
 .activity_badge_1{
     height: 500px;
-    background: url("./Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg") no-repeat ;
-    background-position: center;
+    background: url("./Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg") no-repeat center;
+    background-size:cover;
     position: relative;
     border-radius: 10px;
     box-shadow: 3px 3px 3px lightgrey;
@@ -213,7 +272,9 @@ nav li a:hover{
     display: flex;
     height: 265px;
     border-radius: 10px;
-    background-color: cadetblue;
+    background: url("./Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg") no-repeat;
+    background-size: 300px auto;
+    background-position-y: -80px;
 }
 
 .activity_badge_smaller_1{
@@ -221,7 +282,9 @@ nav li a:hover{
     display: flex;
     height: 200px;
     border-radius: 10px;
-    background-color: chocolate;
+    background: url("./Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: 300px;
+
 }
 .activity_pannel_3{
     display: flex;
@@ -232,6 +295,7 @@ nav li a:hover{
 .activity_badge_3{
     height: 500px;
     background: url("./Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg") no-repeat ;
+    background-size: cover;
     background-position: center;
     position: relative;
     border-radius: 10px;
@@ -250,7 +314,10 @@ nav li a:hover{
     display: flex;
     height: 265px;;
     border-radius: 10px;
-    background-color: cadetblue;
+    background: url("./Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: 300px;
+
+
 }
 
 .activity_badge_smaller_2{
@@ -258,7 +325,8 @@ nav li a:hover{
     display: flex;
     height: 200px;
     border-radius: 10px;
-    background-color: chocolate;
+    background:url("./Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: 300px;
 }
 
 #activity_section h3{
@@ -271,6 +339,7 @@ nav li a:hover{
     margin: 0;
     border-radius: 0 0 5px 5px;
     align-items: center;
+    font-size: 1em;
 }
 
 
@@ -281,7 +350,7 @@ nav li a:hover{
 footer{
     display: flex;
     align-items: flex start;
-    background-color:lightgrey;
+    background-color:#F2F2F2;
 }
 
 footer a{
