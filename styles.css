@@ -67,11 +67,37 @@ nav li a:hover{
 
 #town_form{
     display: flex;
+    
+}
+
+#town_form i{
+    padding: 11px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+}
+
+input{
+    height: 36px;
+    padding: 0;
+    border: none;
+}
+
+input[type=text]{
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+input[type=submit]{
+    background-color: #0065FC;
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+    color: white;
 }
 
 #filter_box{
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 #filter_box li{
@@ -84,12 +110,15 @@ nav li a:hover{
 }
 
 #filter_list li{
-    border-top: solid lightgrey 1px;
-    border-bottom: solid lightgrey 1px;
-    border-right: solid lightgrey 1px;
+    border: solid #DEEBFF 1px;
     margin: 0 5px;
     padding: 0;
     border-radius: 50px;
+}
+
+#filter_list li:hover{
+    flex-direction: row-reverse;
+    background-color: #DEEBFF;
 }
 
 .filter_text{
@@ -116,6 +145,7 @@ nav li a:hover{
 #offer_section{
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 #offer_list{
@@ -232,6 +262,12 @@ nav li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 10px;
+}
+
+.hotspot_stars{
+    margin-top: 20px;
+    margin-left: 5px;
 }
 /* ACTIVITY SECTION */
 
@@ -275,6 +311,8 @@ nav li a:hover{
     background: url("./Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg") no-repeat;
     background-size: 300px auto;
     background-position-y: -80px;
+    box-shadow: 3px 3px 3px lightgrey;
+
 }
 
 .activity_badge_smaller_1{
@@ -284,6 +322,8 @@ nav li a:hover{
     border-radius: 10px;
     background: url("./Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-size: 300px;
+    box-shadow: 3px 3px 3px lightgrey;
+
 
 }
 .activity_pannel_3{
@@ -316,6 +356,7 @@ nav li a:hover{
     border-radius: 10px;
     background: url("./Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     background-size: 300px;
+    box-shadow: 3px 3px 3px lightgrey;
 
 
 }
@@ -327,6 +368,8 @@ nav li a:hover{
     border-radius: 10px;
     background:url("./Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     background-size: 300px;
+    box-shadow: 3px 3px 3px lightgrey;
+
 }
 
 #activity_section h3{
