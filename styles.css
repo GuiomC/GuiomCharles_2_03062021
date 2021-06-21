@@ -14,7 +14,10 @@ body{
     margin: auto;
     font-size: 0,9em;
 }
-
+ /* Pas de changement sur CHROME ? */
+h2, h3{
+    /* font-weight: bolder; */
+}
 /*  HEADER  */
 
 header{
@@ -242,6 +245,11 @@ input[type=submit]{
     background-position-y: -110px;
 }
 
+.hotspot_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .hotspot_pannels{
     display: flex;
     width: 100%;
