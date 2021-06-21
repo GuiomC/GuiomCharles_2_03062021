@@ -15,9 +15,9 @@ body{
     font-size: 0,9em;
 }
  /* Pas de changement sur CHROME ? */
-/* h2, h3{
+h2, h3{
     font-weight: bolder;
-} */
+}
 /*  HEADER  */
 
 header{
